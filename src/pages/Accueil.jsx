@@ -5,8 +5,8 @@ import logoEschoolb from '../assets/eschoolb-logo.png';
 const slides = [
   {
     index: 1,
-    img: '../assets//code1.jpg',
-    alt: 'Code',
+    //img: '../assets//code1.jpg',
+    //alt: 'Code',
     title: 'Développement des logiciels sur mesure',
     text: "Offrez-vous d'une solution informatique pour améliorer les performances et booster votre entreprise vers le plus grand succès.",
     buttonText: 'Nos services',
@@ -14,8 +14,8 @@ const slides = [
   },
   {
     index: 2,
-    img: '../assets//it1.jpg',
-    alt: 'IT',
+    //img: '../assets//it1.jpg',
+    //alt: 'IT',
     title: 'Data Engineering & Analytics',
     text: "Transformez vos données en insights actionnables. Nous construisons des pipelines robustes et des analyses qui éclairent vos décisions stratégiques.",
     buttonText: 'Découvrir',
@@ -23,8 +23,8 @@ const slides = [
   },
   {
     index: 3,
-    img: '../assets/data1.jpg',
-    alt: 'Data',
+    //img: '../assets/data1.jpg',
+    //alt: 'Data',
     title: "Data Science & Intelligence Artificielle",
     text: "L'IA au service de votre croissance. Modèles prédictifs, machine learning et solutions intelligentes adaptées au contexte africain.",
     buttonText: 'En savoir plus',
@@ -32,8 +32,8 @@ const slides = [
   },
   {
     index: 4,
-    img: '../assets/data1.jpg',
-    alt: 'Data',
+    //img: '../assets/data1.jpg',
+    //alt: 'Data',
     title: "Solutions IT & Data pour la transformation digitale",
     text: "Accompagnons les entreprises et organisations africaines dans leur transformation numérique avec des solutions sur mesure et orientées impact.",
     buttonText: 'Contactez-nous',
@@ -143,6 +143,16 @@ function Accueil() {
                 <img
                   src={logoEschoolb}
                   alt="E-SchoolB - Digitalisons les écoles"
+                  className="partner-logo-image"
+                />
+              </div>
+            </div>
+            <div className="partners-grid partners-grid--single">
+            <div className="partner-item">
+              <div className="partner-logo-placeholder">
+                <img
+                  src={msp}
+                  alt="Ministère de la santé et hygiene publique"
                   className="partner-logo-image"
                 />
               </div>
