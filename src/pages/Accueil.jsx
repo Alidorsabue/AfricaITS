@@ -91,7 +91,6 @@ function Accueil() {
             <img className="slide-img" src={slides[current].img} alt={slides[current].alt} />
             <div className="slide-overlay"></div>
             <div className="slideTexte">
-              <div className="slide-index">{current + 1} / {total}</div>
               <h1 className="hero-title">{slides[current].title}</h1>
               <p className="hero-text">{slides[current].text}</p>
               <Link to={slides[current].buttonLink} className="btn-slide">
@@ -118,56 +117,6 @@ function Accueil() {
         </div>
       </section>
 
-      {/* Section Projets Réalisés */}
-      <section className="projects-section">
-        <div className="container">
-          <h2>Quelques projets que nous avons réalisés</h2>
-          <p className="projects-intro">
-            Nous concevons et déployons des solutions complètes, de la phase d&apos;idée à la mise en production,
-            en combinant développement logiciel, data engineering et intelligence artificielle.
-          </p>
-          <div className="projects-grid">
-            <article className="project-card">
-              <h3>E‑School – Plateforme de gestion scolaire</h3>
-              <p>
-                E‑School est une plateforme web de gestion scolaire complète, conçue pour les écoles et instituts africains.
-                Elle centralise la gestion des élèves, enseignants, classes, notes, présences et communications avec les parents,
-                afin de réduire la charge administrative et améliorer le suivi pédagogique.
-              </p>
-              <ul className="project-features">
-                <li>Gestion des inscriptions, dossiers élèves et historiques scolaires.</li>
-                <li>Saisie et génération automatisée des bulletins, relevés et états statistiques.</li>
-                <li>Suivi des présences et discipline avec tableaux de bord en temps réel.</li>
-                <li>Accès sécurisé pour administration, enseignants, parents et élèves.</li>
-              </ul>
-              <p className="project-tech">
-                <strong>Technologies :</strong> Backend Django / Django REST, base de données relationnelle,
-                frontend web moderne, déploiement cloud.
-              </p>
-            </article>
-
-            <article className="project-card">
-              <h3>AfricaHire+ – Plateforme ATS de recrutement intelligente</h3>
-              <p>
-                AfricaHire+ est une plateforme ATS (Applicant Tracking System) dédiée au marché africain,
-                intégrant un module de Machine Learning pour automatiser le screening et le shortlisting des candidats,
-                ainsi que l&apos;organisation de tests techniques en ligne.
-              </p>
-              <ul className="project-features">
-                <li>Centralisation des offres d&apos;emploi, candidatures et étapes du processus de recrutement.</li>
-                <li>Modèle de scoring intelligent pour classer les CV en fonction des compétences et de l&apos;expérience.</li>
-                <li>Organisation et correction automatisée des tests techniques en ligne.</li>
-                <li>Tableaux de bord RH pour le suivi des indicateurs de recrutement (temps de recrutement, qualité des profils, etc.).</li>
-              </ul>
-              <p className="project-tech">
-                <strong>Technologies :</strong> API backend, modèles de Machine Learning pour le screening des CV,
-                interface web réactive, intégration avec des outils RH et messagerie.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       {/* Section Nos Partenaires */}
       <section className="partners-section">
         <div className="container">
@@ -179,7 +128,11 @@ function Accueil() {
           <div className="partners-grid">
             <div className="partner-item">
               <div className="partner-logo-placeholder">
-                <span>Logo Partenaire 1</span>
+                <img
+                  src="images/eschoolb-logo.png"
+                  alt="E-SchoolB - Digitalisons les écoles"
+                  className="partner-logo-image"
+                />
               </div>
             </div>
             <div className="partner-item">
