@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logoEschoolb from '../assets/eschoolb-logo.png';
+import msp from '../assets/msp.png';
 
 const slides = [
   {
@@ -137,7 +138,7 @@ function Accueil() {
             Nous collaborons avec des organisations et institutions qui partagent notre vision 
             de la transformation digitale en Afrique.
           </p>
-          <div className="partners-grid partners-grid--single">
+          <div className="partners-grid">
             <div className="partner-item">
               <div className="partner-logo-placeholder">
                 <img
@@ -147,13 +148,11 @@ function Accueil() {
                 />
               </div>
             </div>
-          </div>
-          <div className="partners-grid partners-grid--single">
             <div className="partner-item">
               <div className="partner-logo-placeholder">
                 <img
                   src={msp}
-                  alt="Ministère de la santé et hygiene publique"
+                  alt="Ministère de la santé et hygiène publique"
                   className="partner-logo-image"
                 />
               </div>
