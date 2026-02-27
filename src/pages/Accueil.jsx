@@ -147,7 +147,8 @@ function Accueil() {
                 />
               </div>
             </div>
-            <div className="partners-grid partners-grid--single">
+          </div>
+          <div className="partners-grid partners-grid--single">
             <div className="partner-item">
               <div className="partner-logo-placeholder">
                 <img
