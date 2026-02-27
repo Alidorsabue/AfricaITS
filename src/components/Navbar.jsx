@@ -15,14 +15,14 @@ function Navbar() {
         <span className="bar"></span>
       </button>
       <ul className={open ? 'open' : ''}>
-        <li><Link to="/" onClick={handleClose}>Accueil |</Link></li>
-        <li><Link to="/services" onClick={handleClose}>Services |</Link></li>
-        <li><Link to="/about" onClick={handleClose}>À propos |</Link></li>
-        <li><Link to="/portfolio" onClick={handleClose}>Portfolio |</Link></li>
-        <li><Link to="/secteurs" onClick={handleClose}>Secteurs |</Link></li>
-        <li><Link to="/formations" onClick={handleClose}>Formations |</Link></li>
-        <li><Link to="/blog" onClick={handleClose}>Blog |</Link></li>
-        <li><Link to="/contact" onClick={handleClose}>Contact |</Link></li>
+        <li><Link to="/" onClick={handleClose}>Accueil</Link></li>
+        <li><Link to="/services" onClick={handleClose}>Services</Link></li>
+        <li><Link to="/about" onClick={handleClose}>À propos</Link></li>
+        <li><Link to="/portfolio" onClick={handleClose}>Portfolio</Link></li>
+        <li><Link to="/secteurs" onClick={handleClose}>Secteurs</Link></li>
+        <li><Link to="/formations" onClick={handleClose}>Formations</Link></li>
+        <li><Link to="/blog" onClick={handleClose}>Blog</Link></li>
+        <li><Link to="/contact" onClick={handleClose}>Contact</Link></li>
       </ul>
     </nav>
   );
