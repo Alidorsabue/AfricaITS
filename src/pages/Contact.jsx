@@ -255,7 +255,7 @@ function Contact() {
                   </div>
                   <div className="info-content">
                     <h3>Email</h3>
-                    <a href="mailto:alidorsabue@africaits.com">contact@africaits.com</a>
+                    <a href="mailto:alidorsabue@africaits.com">alidorsabue@africaits.com</a>
                   </div>
                 </div>
 
@@ -318,9 +318,15 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="map-placeholder">
-                <div className="map-icon">📍</div>
-                <p>Carte Google Maps à intégrer</p>
+              <div className="map-container">
+                <iframe
+                  src="https://www.google.com/maps?q=Kinshasa,+R%C3%A9publique+D%C3%A9mocratique+du+Congo&output=embed"
+                  title="Localisation AITS - Kinshasa, RDC"
+                  className="map-iframe"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>

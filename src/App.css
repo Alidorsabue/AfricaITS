@@ -713,6 +713,12 @@ footer {
   line-height: 1;
 }
 
+.service-icon .service-icon-svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--color-primary);
+}
+
 .service-header h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -1799,6 +1805,22 @@ footer {
   font-size: 0.95rem;
 }
 
+.map-container {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-grey);
+  box-shadow: var(--shadow-sm);
+  background: var(--color-bg);
+}
+
+.map-iframe {
+  display: block;
+  width: 100%;
+  height: 280px;
+  border: 0;
+}
+
 /* Améliorations générales pour tous les écrans */
 * {
   -webkit-tap-highlight-color: transparent;
@@ -2135,6 +2157,11 @@ button, .btn-primary, .btn-secondary, .btn-slide, .btn-submit {
     font-size: 3rem;
   }
 
+  .service-icon .service-icon-svg {
+    width: 3rem;
+    height: 3rem;
+  }
+
   .service-header h2 {
     font-size: 1.5rem;
   }
@@ -2356,6 +2383,10 @@ button, .btn-primary, .btn-secondary, .btn-slide, .btn-submit {
 
   .map-icon {
     font-size: 2rem;
+  }
+
+  .map-iframe {
+    height: 220px;
   }
 
   /* Footer */

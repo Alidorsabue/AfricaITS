@@ -101,19 +101,19 @@ function About() {
           <div className="team-grid">
             <div className="team-member">
               <div className="member-placeholder">👤</div>
-              <h3>Profil 1</h3>
-              <p className="member-role">Fondateur & Directeur Technique</p>
-              <p>Expertise en développement logiciel et architecture de systèmes</p>
+              <h3>Alidor SABUE</h3>
+              <p className="member-role">Fondateur & Directeur General</p>
+              <p>Expertise en développement logiciel et architecture de systèmes et Data science</p>
             </div>
             <div className="team-member">
               <div className="member-placeholder">👤</div>
-              <h3>Profil 2</h3>
+              <h3>Justin MULANGU</h3>
               <p className="member-role">Co-fondateur & Data Lead</p>
               <p>Spécialiste en Data Engineering et Data Science</p>
             </div>
             <div className="team-member">
               <div className="member-placeholder">👤</div>
-              <h3>Profil 3</h3>
+              <h3>Idriss KABANGU</h3>
               <p className="member-role">Co-fondateur & Business Development</p>
               <p>Expert en stratégie digitale et développement d'affaires en Afrique</p>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logoEschoolb from '../assets/eschoolb-logo.png';
 
 const slides = [
   {
@@ -129,7 +130,7 @@ function Accueil() {
             <div className="partner-item">
               <div className="partner-logo-placeholder">
                 <img
-                  src="/images/eschoolb-logo.png"
+                  src={logoEschoolb}
                   alt="E-SchoolB - Digitalisons les écoles"
                   className="partner-logo-image"
                 />

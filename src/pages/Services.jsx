@@ -31,7 +31,7 @@ const services = [
   {
     id: 3,
     title: 'Data Analysis',
-    icon: '📊',
+    icon: 'chart',
     description: 'Transformez vos données en insights actionnables',
     details: [
       'Nettoyage & qualité des données',
@@ -99,7 +99,16 @@ function Services() {
           {services.map((service) => (
             <div key={service.id} className="service-detail-card">
               <div className="service-header">
-                <div className="service-icon">{service.icon}</div>
+                <div className="service-icon">
+                  {service.icon === 'chart' ? (
+                    <svg className="service-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M3 3v18h18" />
+                      <path d="M7 16v-5M12 16v-8M17 16v-2" />
+                    </svg>
+                  ) : (
+                    service.icon
+                  )}
+                </div>
                 <div>
                   <h2>{service.title}</h2>
                   <p className="service-description">{service.description}</p>
