@@ -5,7 +5,7 @@ import logoEschoolb from '../assets/eschoolb-logo.png';
 const slides = [
   {
     index: 1,
-    img: 'images/code1.jpg',
+    img: '../assets//code1.jpg',
     alt: 'Code',
     title: 'Développement des logiciels sur mesure',
     text: "Offrez-vous d'une solution informatique pour améliorer les performances et booster votre entreprise vers le plus grand succès.",
@@ -14,7 +14,7 @@ const slides = [
   },
   {
     index: 2,
-    img: 'images/it1.jpg',
+    img: '../assets//it1.jpg',
     alt: 'IT',
     title: 'Data Engineering & Analytics',
     text: "Transformez vos données en insights actionnables. Nous construisons des pipelines robustes et des analyses qui éclairent vos décisions stratégiques.",
@@ -23,7 +23,7 @@ const slides = [
   },
   {
     index: 3,
-    img: 'images/data1.jpg',
+    img: '../assets/data1.jpg',
     alt: 'Data',
     title: "Data Science & Intelligence Artificielle",
     text: "L'IA au service de votre croissance. Modèles prédictifs, machine learning et solutions intelligentes adaptées au contexte africain.",
@@ -32,7 +32,7 @@ const slides = [
   },
   {
     index: 4,
-    img: 'images/data1.jpg',
+    img: '../assets/data1.jpg',
     alt: 'Data',
     title: "Solutions IT & Data pour la transformation digitale",
     text: "Accompagnons les entreprises et organisations africaines dans leur transformation numérique avec des solutions sur mesure et orientées impact.",
@@ -115,6 +115,17 @@ function Accueil() {
               aria-label={`Aller au slide ${idx + 1}`}
             ></span>
           ))}
+        </div>
+      </section>
+
+      <section className="services-cta">
+        <div className="container">
+          <h2>Besoin d'un devis personnalisé ?</h2>
+          <p>Contactez-nous pour discuter de votre projet et obtenir une estimation adaptée à vos besoins.</p>
+          <div className="cta-buttons">
+            <Link to="/contact" className="btn-primary">Demander un devis</Link>
+            <Link to="/formations" className="btn-secondary">Découvrir nos formations</Link>
+          </div>
         </div>
       </section>
 
