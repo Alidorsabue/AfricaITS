@@ -125,29 +125,14 @@ function Accueil() {
             Nous collaborons avec des organisations et institutions qui partagent notre vision 
             de la transformation digitale en Afrique.
           </p>
-          <div className="partners-grid">
+          <div className="partners-grid partners-grid--single">
             <div className="partner-item">
               <div className="partner-logo-placeholder">
                 <img
-                  src="images/eschoolb-logo.png"
+                  src="/images/eschoolb-logo.png"
                   alt="E-SchoolB - Digitalisons les écoles"
                   className="partner-logo-image"
                 />
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-logo-placeholder">
-                <span>Logo Partenaire 2</span>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-logo-placeholder">
-                <span>Logo Partenaire 3</span>
-              </div>
-            </div>
-            <div className="partner-item">
-              <div className="partner-logo-placeholder">
-                <span>Logo Partenaire 4</span>
               </div>
             </div>
           </div>
