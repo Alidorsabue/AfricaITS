@@ -130,10 +130,14 @@ function Accueil() {
         </div>
       </section>
 
-      {/* Section Nos Partenaires */}
-      <section className="partners-section">
+      {/* Nos partenaires */}
+      <div
+        className="partners-section"
+        role="region"
+        aria-labelledby="partners-heading"
+      >
         <div className="container">
-          <h2>Nos Partenaires</h2>
+          <h2 id="partners-heading">Nos Partenaires</h2>
           <p className="partners-intro">
             Nous collaborons avec des organisations et institutions qui partagent notre vision 
             de la transformation digitale en Afrique.
@@ -159,7 +163,7 @@ function Accueil() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </main>
   );
 }
