@@ -225,6 +225,7 @@ body.theme-dark .app-form-focus-overlay {
   position: relative;
   z-index: 60;
   isolation: isolate;
+  background: #ffffff;
   box-shadow:
     0 0 0 3px rgba(255, 122, 0, 0.55),
     0 18px 48px rgba(0, 0, 0, 0.22);
@@ -1276,17 +1277,20 @@ footer {
 }
 
 /* Page iframe formulaire Tally (inscription formation IA) */
+/* Fond blanc sur toute la zone questionnaire (Tally en transparentBackground voit ce fond) */
 .formation-tally-page {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 200px);
   padding: 0;
+  background: #ffffff;
+  color: #1a2332;
 }
 
 .formation-tally-page-header {
   padding: 1rem 0;
-  background: var(--color-bg);
-  border-bottom: 1px solid var(--color-grey);
+  background: #ffffff;
+  border-bottom: 1px solid #e8ecf1;
 }
 
 .formation-tally-page-header-inner {
@@ -1298,19 +1302,20 @@ footer {
 .formation-tally-back {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: #1565c0;
   text-decoration: none;
   align-self: flex-start;
 }
 
 .formation-tally-back:hover {
   text-decoration: underline;
+  color: #0d47a1;
 }
 
 .formation-tally-page-title {
   margin: 0;
   font-size: 1.25rem;
-  color: var(--color-text);
+  color: #1a2332;
   line-height: 1.35;
 }
 
@@ -1319,6 +1324,7 @@ footer {
   flex: 1;
   width: 100%;
   min-height: min(920px, calc(100vh - 260px));
+  background: #ffffff;
 }
 
 .formation-tally-embed-wrap iframe {
