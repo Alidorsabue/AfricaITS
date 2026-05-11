@@ -72,6 +72,28 @@ function Formations() {
         </div>
       </section>
 
+      <section className="formation-tally-banner" aria-labelledby="formation-ia-banner-title">
+        <div className="container">
+          <div className="formation-tally-banner-inner">
+            <div>
+              <p className="formation-tally-banner-badge">Inscriptions ouvertes</p>
+              <h2 id="formation-ia-banner-title" className="formation-tally-banner-title">
+                Formation IA générative et prompt engineering
+              </h2>
+              <p className="formation-tally-banner-text">
+                Réservez votre place via notre formulaire en ligne (quelques minutes).
+              </p>
+            </div>
+            <Link
+              to="/formations/inscription-ia-generative"
+              className="btn-primary formation-tally-banner-cta"
+            >
+              S&apos;inscrire à la formation
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="formations-content">
         <div className="container">
           <div className="formations-grid">
