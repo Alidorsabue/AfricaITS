@@ -2,9 +2,14 @@ import React from 'react';
 import Navbar from './Navbar';
 import logoAITS from '../assets/logo_aits.png';
 
-function Header({ theme, toggleTheme }) {
+function Header({ theme, toggleTheme, chromeInactive = false }) {
   return (
-    <header className="header">
+    <header
+      className={
+        chromeInactive ? 'header header--chrome-inactive' : 'header'
+      }
+      inert={chromeInactive ? true : undefined}
+    >
       <div className="header-left">
         <img src={logoAITS} alt="Logo AITS" className="logo-aits" />
         <h1 className="site-title">Africa IT Solution<span className="orange">.</span></h1>

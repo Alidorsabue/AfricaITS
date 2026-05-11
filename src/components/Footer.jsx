@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Footer() {
+function Footer({ chromeInactive = false }) {
   return (
-    <footer>
+    <footer
+      className={chromeInactive ? 'footer--chrome-inactive' : undefined}
+      inert={chromeInactive ? true : undefined}
+    >
       <div className="footer-content">
         <div className="footer-section">
           <h3>Africa IT Solution</h3>

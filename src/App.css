@@ -179,6 +179,78 @@ body {
   margin: 0;
 }
 
+/* Page inscription Tally : chrome du site assombri, inactif ; zone formulaire mise en avant */
+.app-form-focus-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.62) 0%,
+    rgba(15, 23, 42, 0.4) 38%,
+    rgba(15, 23, 42, 0.4) 62%,
+    rgba(15, 23, 42, 0.62) 100%
+  );
+  animation: app-form-focus-overlay-in 0.28s ease forwards;
+}
+
+body.theme-dark .app-form-focus-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.48) 38%,
+    rgba(0, 0, 0, 0.48) 62%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+}
+
+@keyframes app-form-focus-overlay-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-form-focus-overlay {
+    animation: none;
+  }
+}
+
+.content--form-focus-island {
+  position: relative;
+  z-index: 60;
+  isolation: isolate;
+  box-shadow:
+    0 0 0 3px rgba(255, 122, 0, 0.55),
+    0 18px 48px rgba(0, 0, 0, 0.22);
+}
+
+body.theme-dark .content--form-focus-island {
+  box-shadow:
+    0 0 0 3px rgba(255, 183, 77, 0.55),
+    0 18px 48px rgba(0, 0, 0, 0.45);
+}
+
+.header.header--chrome-inactive {
+  z-index: 2;
+  pointer-events: none;
+  filter: saturate(0.82) brightness(0.9);
+  transition: filter 0.28s ease;
+}
+
+footer.footer--chrome-inactive {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  filter: saturate(0.82) brightness(0.88);
+  transition: filter 0.28s ease;
+}
+
 /* Hero Slider */
 .hero-slider {
   position: relative;
